@@ -19,7 +19,7 @@ openssl x509 -signkey ca-store/CA-Key.pem -req -in ca-store/CA-CSR.pem -extensio
 
 echo "CA Created Successfully!"
 
-echo "That CA will be used for all operations."
+echo "This CA will be used for all operations."
 
 rm ca-store/CA-CSR.pem
 
