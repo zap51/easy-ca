@@ -25,6 +25,8 @@ subjectAltName = @alt_names
 
 openssl req -new -sha256 -key server-private-key.pem -nodes -outform PEM -out server-csr.pem -config conf/server.conf
 
+rm conf/server.conf
+
 echo "CSR generated successfully."
 
 echo " Verify using 'openssl req -in server-csr.pem -text -noout' "
